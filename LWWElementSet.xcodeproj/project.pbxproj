@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		16952B1121B599AC00FD6169 /* LWWElementSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16952B0721B599AC00FD6169 /* LWWElementSet.framework */; };
-		16952B1621B599AC00FD6169 /* LWWElementSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B1521B599AC00FD6169 /* LWWElementSetTests.swift */; };
 		16952B1821B599AC00FD6169 /* LWWElementSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 16952B0A21B599AC00FD6169 /* LWWElementSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16952B2321B59A8D00FD6169 /* SetElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2221B59A8D00FD6169 /* SetElementTests.swift */; };
+		16952B2521B59B3A00FD6169 /* SetElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2421B59B3A00FD6169 /* SetElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		16952B0A21B599AC00FD6169 /* LWWElementSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWWElementSet.h; sourceTree = "<group>"; };
 		16952B0B21B599AC00FD6169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16952B1021B599AC00FD6169 /* LWWElementSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWWElementSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16952B1521B599AC00FD6169 /* LWWElementSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWElementSetTests.swift; sourceTree = "<group>"; };
 		16952B1721B599AC00FD6169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16952B2221B59A8D00FD6169 /* SetElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetElementTests.swift; sourceTree = "<group>"; };
+		16952B2421B59B3A00FD6169 /* SetElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		16952B0921B599AC00FD6169 /* LWWElementSet */ = {
 			isa = PBXGroup;
 			children = (
+				16952B2121B59A4400FD6169 /* Source */,
 				16952B0A21B599AC00FD6169 /* LWWElementSet.h */,
 				16952B0B21B599AC00FD6169 /* Info.plist */,
 			);
@@ -80,10 +83,18 @@
 		16952B1421B599AC00FD6169 /* LWWElementSetTests */ = {
 			isa = PBXGroup;
 			children = (
-				16952B1521B599AC00FD6169 /* LWWElementSetTests.swift */,
+				16952B2221B59A8D00FD6169 /* SetElementTests.swift */,
 				16952B1721B599AC00FD6169 /* Info.plist */,
 			);
 			path = LWWElementSetTests;
+			sourceTree = "<group>";
+		};
+		16952B2121B59A4400FD6169 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				16952B2421B59B3A00FD6169 /* SetElement.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					16952B0621B599AC00FD6169 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					16952B0F21B599AC00FD6169 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16952B2521B59B3A00FD6169 /* SetElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16952B1621B599AC00FD6169 /* LWWElementSetTests.swift in Sources */,
+				16952B2321B59A8D00FD6169 /* SetElementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		16952B1C21B599AC00FD6169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -358,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.LWWElementSet;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -365,6 +380,7 @@
 		16952B1D21B599AC00FD6169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +406,7 @@
 		16952B1F21B599AC00FD6169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LWWElementSetTests/Info.plist;
@@ -407,6 +424,7 @@
 		16952B2021B599AC00FD6169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LWWElementSetTests/Info.plist;
