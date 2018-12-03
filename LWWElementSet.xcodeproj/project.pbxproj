@@ -11,6 +11,8 @@
 		16952B1821B599AC00FD6169 /* LWWElementSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 16952B0A21B599AC00FD6169 /* LWWElementSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16952B2321B59A8D00FD6169 /* SetElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2221B59A8D00FD6169 /* SetElementTests.swift */; };
 		16952B2521B59B3A00FD6169 /* SetElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2421B59B3A00FD6169 /* SetElement.swift */; };
+		16952B2721B5A44100FD6169 /* LWWSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2621B5A44100FD6169 /* LWWSet.swift */; };
+		16952B2921B5A7B000FD6169 /* LWWSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2821B5A7B000FD6169 /* LWWSetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		16952B1721B599AC00FD6169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16952B2221B59A8D00FD6169 /* SetElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetElementTests.swift; sourceTree = "<group>"; };
 		16952B2421B59B3A00FD6169 /* SetElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetElement.swift; sourceTree = "<group>"; };
+		16952B2621B5A44100FD6169 /* LWWSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWSet.swift; sourceTree = "<group>"; };
+		16952B2821B5A7B000FD6169 /* LWWSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWSetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				16952B2221B59A8D00FD6169 /* SetElementTests.swift */,
+				16952B2821B5A7B000FD6169 /* LWWSetTests.swift */,
 				16952B1721B599AC00FD6169 /* Info.plist */,
 			);
 			path = LWWElementSetTests;
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				16952B2421B59B3A00FD6169 /* SetElement.swift */,
+				16952B2621B5A44100FD6169 /* LWWSet.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16952B2521B59B3A00FD6169 /* SetElement.swift in Sources */,
+				16952B2721B5A44100FD6169 /* LWWSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16952B2321B59A8D00FD6169 /* SetElementTests.swift in Sources */,
+				16952B2921B5A7B000FD6169 /* LWWSetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
