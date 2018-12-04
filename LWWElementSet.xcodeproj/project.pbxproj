@@ -13,6 +13,8 @@
 		16952B2521B59B3A00FD6169 /* SetElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2421B59B3A00FD6169 /* SetElement.swift */; };
 		16952B2721B5A44100FD6169 /* LWWSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2621B5A44100FD6169 /* LWWSet.swift */; };
 		16952B2921B5A7B000FD6169 /* LWWSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B2821B5A7B000FD6169 /* LWWSetTests.swift */; };
+		16952B3C21B6B8BE00FD6169 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16952B3B21B6B8BE00FD6169 /* main.swift */; };
+		16952B4521B6BBB500FD6169 /* LWWElementSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16952B0721B599AC00FD6169 /* LWWElementSet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16952B3721B6B8BE00FD6169 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		16952B0721B599AC00FD6169 /* LWWElementSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LWWElementSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16952B0A21B599AC00FD6169 /* LWWElementSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWWElementSet.h; sourceTree = "<group>"; };
@@ -35,6 +49,8 @@
 		16952B2421B59B3A00FD6169 /* SetElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetElement.swift; sourceTree = "<group>"; };
 		16952B2621B5A44100FD6169 /* LWWSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWSet.swift; sourceTree = "<group>"; };
 		16952B2821B5A7B000FD6169 /* LWWSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWSetTests.swift; sourceTree = "<group>"; };
+		16952B3921B6B8BE00FD6169 /* LWWSetExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LWWSetExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		16952B3B21B6B8BE00FD6169 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16952B3621B6B8BE00FD6169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16952B4521B6BBB500FD6169 /* LWWElementSet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,7 +85,9 @@
 			children = (
 				16952B0921B599AC00FD6169 /* LWWElementSet */,
 				16952B1421B599AC00FD6169 /* LWWElementSetTests */,
+				16952B3A21B6B8BE00FD6169 /* LWWSetExample */,
 				16952B0821B599AC00FD6169 /* Products */,
+				16952B4021B6BA5E00FD6169 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +96,7 @@
 			children = (
 				16952B0721B599AC00FD6169 /* LWWElementSet.framework */,
 				16952B1021B599AC00FD6169 /* LWWElementSetTests.xctest */,
+				16952B3921B6B8BE00FD6169 /* LWWSetExample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +128,21 @@
 				16952B2621B5A44100FD6169 /* LWWSet.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		16952B3A21B6B8BE00FD6169 /* LWWSetExample */ = {
+			isa = PBXGroup;
+			children = (
+				16952B3B21B6B8BE00FD6169 /* main.swift */,
+			);
+			path = LWWSetExample;
+			sourceTree = "<group>";
+		};
+		16952B4021B6BA5E00FD6169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +195,23 @@
 			productReference = 16952B1021B599AC00FD6169 /* LWWElementSetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		16952B3821B6B8BE00FD6169 /* LWWSetExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16952B3F21B6B8BE00FD6169 /* Build configuration list for PBXNativeTarget "LWWSetExample" */;
+			buildPhases = (
+				16952B3521B6B8BE00FD6169 /* Sources */,
+				16952B3621B6B8BE00FD6169 /* Frameworks */,
+				16952B3721B6B8BE00FD6169 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LWWSetExample;
+			productName = LWWSetExample;
+			productReference = 16952B3921B6B8BE00FD6169 /* LWWSetExample */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +227,9 @@
 						LastSwiftMigration = 1010;
 					};
 					16952B0F21B599AC00FD6169 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					16952B3821B6B8BE00FD6169 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -186,6 +248,7 @@
 			targets = (
 				16952B0621B599AC00FD6169 /* LWWElementSet */,
 				16952B0F21B599AC00FD6169 /* LWWElementSetTests */,
+				16952B3821B6B8BE00FD6169 /* LWWSetExample */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +286,14 @@
 			files = (
 				16952B2321B59A8D00FD6169 /* SetElementTests.swift in Sources */,
 				16952B2921B5A7B000FD6169 /* LWWSetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16952B3521B6B8BE00FD6169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16952B3C21B6B8BE00FD6169 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +432,7 @@
 		16952B1C21B599AC00FD6169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +460,7 @@
 		16952B1D21B599AC00FD6169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +520,28 @@
 			};
 			name = Release;
 		};
+		16952B3D21B6B8BE00FD6169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/LWWElementSet.framework/Versions/Current/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		16952B3E21B6B8BE00FD6169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/LWWElementSet.framework/Versions/Current/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +568,15 @@
 			buildConfigurations = (
 				16952B1F21B599AC00FD6169 /* Debug */,
 				16952B2021B599AC00FD6169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16952B3F21B6B8BE00FD6169 /* Build configuration list for PBXNativeTarget "LWWSetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16952B3D21B6B8BE00FD6169 /* Debug */,
+				16952B3E21B6B8BE00FD6169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
