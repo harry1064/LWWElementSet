@@ -17,7 +17,7 @@ public struct SetElement: Hashable {
         }
     }
 
-    init(name: String, timestamp: Date = Date()) {
+    public init(name: String, timestamp: Date = Date()) {
         self.name = name
         self.timestamp = timestamp
     }

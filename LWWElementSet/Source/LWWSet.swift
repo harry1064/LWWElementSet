@@ -11,6 +11,8 @@ public struct LWWSet {
     private var addSet: Set<SetElement> = []
     private var removeSet: Set<SetElement> = []
 
+    public init() {}
+
     private func addToSet( set: inout Set<SetElement>, element: SetElement) {
         if let oldElement = self.find(name: element.name, in:set) {
             if element.timestamp > oldElement.timestamp {
